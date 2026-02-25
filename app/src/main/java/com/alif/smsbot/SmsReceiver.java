@@ -37,7 +37,7 @@ public class SmsReceiver extends BroadcastReceiver {
             @Override
             public void run() {
                 try {
-                    // ⚠️ নিচের লিংকে আপনার নিজের বটের URL বসান
+                    // ⚠️ এখানে আপনার নিজের বটের Webhook URL দিন
                     URL url = new URL("https://your-bot-url.vercel.app/sms-webhook");
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
